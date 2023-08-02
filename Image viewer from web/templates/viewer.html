@@ -1,0 +1,15 @@
+{% extends 'home.html' %} 
+{% block title %}Image results{% endblock %}
+{% block content %}
+            {% if img_links|length != 0 %}
+            <div class="image-container">
+                {% for item in img_links %}
+                
+                <img src="{{ item }}" alt="{{ item }}" width="300" height="300">
+                {% endfor %}
+            </div>
+            {% else %}
+                    <h1>No images found in this site</h1>
+            {% endif %}
+            
+{% endblock %}

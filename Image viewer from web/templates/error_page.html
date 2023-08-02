@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-color: dimgrey;
+        }
+        #error {
+            position: absolute;
+            font-family: monospace;
+            color: rgb(82, 27, 27);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: #FFF;
+            box-shadow:3px 3px 10px 15px #fff;
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            place-items: center;
+        }
+        
+
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Can't process your request</title>
+</head>
+<body>
+    <div id="error">
+    <h1>Error occured {{ error }}</h1>
+    </div>
+</body>
+</html>
